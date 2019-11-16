@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Práctica 1.16</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <form action="ejemplo.html" method="get">
+        <table cellpadding="15">
+
+            <tr>
+
+                <td>
+                    <p>Tratamiento: *</p>
+                    <input type="radio" name="tratamiento" value="sr" required> Sr.
+                    <input type="radio" name="tratamiento" value="sra" required> Sra.
+                </td>
+
+                <td>
+                    <p>Nombre: *</p>
+                    <input type="text" name="nombre" size="20" required>
+                </td>
+
+                <td>
+                    <p>Apellido1: *</p>
+                    <input type="text" name="apellido1" size="20" required>
+                </td>
+
+                <td>
+                    <p>Apellido2: </p>
+                    <input type="text" name="apellido2" size="20">
+                </td>
+            </tr>
+
+            <tr>
+
+                <td>
+                    <p>Tipo Doc: *</p>
+                    <select name="tipodoc">
+                        <option value="1">D.N.I</option>
+                        <option value="2">NIA</option>
+                    </select>
+                </td>
+
+                <td>
+                    <p>NºDoc: *<button type="button" onclick="mensaje('Información')">
+                            <img src="img/images.png" alt="imagen" width="15" height="15"
+                                style="vertical-align: middle">
+                        </button></p>
+                    <input type="text" name="ndoc" size="20" required>
+                </td>
+
+                <td>
+                    <p>Fecha Nacimiento: *<button type="button" onclick="mensaje('Información')">
+                            <img src="img/images.png" alt="imagen" width="15" height="15"
+                                style="vertical-align: middle">
+                        </button></p>
+                    <input type="date" name="fechanacimiento" required>
+                </td>
+            </tr>
+
+            <tr>
+
+                <td>
+                    <p>País de Nacimiento: *</p>
+                    <select name="paisdenacimiento" required>
+                        <option value="espana">ESPAÑA</option>
+                        <option value="chile">CHILE</option>
+                        <option value="alemania">ALEMANIA</option>
+                    </select>
+                </td>
+
+                <td>
+                    <p>Nacionalidad: *</p>
+                    <select name="nacionalidad" required>
+                        <option value="espana">ESPAÑA</option>
+                        <option value="chile">CHILE</option>
+                        <option value="alemania">ALEMANIA</option>
+                    </select>
+                </td>
+
+                <td>
+                    <p>Segunda Nacionalidad:</p>
+                    <select name="segundanacionalidad">
+                        <option value="ninguna">Ninguna</option>
+                        <option value="espanola">ESPAÑOLA</option>
+                        <option value="alemania">ALEMANA</option>
+                    </select>
+                </td>
+
+                <td>
+                    <p>País residencia fiscal: *:</p>
+                    <select name="paisresidenciafiscal" required>
+                        <option value="espana">ESPAÑA</option>
+                        <option value="bahamas">BAHAMAS</option>
+                        <option value="suiza">SUIZA</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>Trabajo*</p>
+                    <select name="trabajo" required>
+                        <option selected disabled>Selecciona una opción</option>
+                        <option value="informatico">Informático</option>
+                        <option value="abogado">Abogado</option>
+                        <option value="profesor">Profesor</option>
+                    </select>
+                </td>
+
+                <td>
+                    <p>Tipo de Actividad*</p>
+                    <select name="tipodeactividad" required>
+                        <option selected disabled>Selecciona una opción</option>
+                        <option value="tareashogar">Tareas hogar</option>
+                        <option value="estudiante">Estudiante</option>
+                        <option value="desempleado">Desempleado</option>
+                        <option value="jubilado">Jubilado</option>
+                        <option value="pensionista">Pensionista</option>
+                    </select>
+                </td>
+
+                <td>
+                    <p>Sector Profesional*</p>
+                    <select name="sectorprofesional" required>
+                        <option selected disabled>Selecciona una opción</option>
+                        <option value="notrabaja">No trabaja</option>
+                        <option value="banca">Banca</option>
+                        <option value="construccion">Construcción</option>
+                        <option value="energia">Energía</option>
+                        <option value="industria">Industria</option>
+                        <option value="recursoshumanos">Recursos Humanos</option>
+                        <option value="servicios">Servicios</option>
+                    </select>
+                </td>
+                <td>
+                    <p>Empresa *
+                        <button type="button" onclick="mensaje('Información')">
+                            <img src="img/images.png" alt="imagen" width="15" height="15"
+                                style="vertical-align: middle">
+                        </button>
+                    </p>
+
+                    <select name="tipodeactividad" required>
+                        <option selected disabled>Selecciona una opción</option>
+                        <option value="porcuentaajena">Por cuenta ajena</option>
+                        <option value="porcuentapropia">Por cuenta propia</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+
+                <td>
+                    <p>Propósito de la cuenta: *</p>
+                    <select name="propositodelacuenta" required>
+                        <option value="ahorro" selected>Ahorro</option>
+                        <option value="nomina">Nómina</option>
+                        <option value="gastos">Gastos</option>
+                    </select>
+                </td>
+
+                <td>
+                    <p>Origen de sus ahorros: *</p>
+                    <select name="Origendesusahorros" required>
+                        <option selected disabled>Nómina o pensión </option>
+                        <option value="nomina">Nómina</option>
+                        <option value="pension">Pensión</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <table class="greytable" cellpadding="15">
+
+            <tr>
+
+                <td>
+                    <p>Tipo de vía*</p>
+                    <select name="tipodevia" required>
+                        <option value="calle" selected>CALLE</option>
+                        <option value="via">VÍA</option>
+                        <option value="camino">CAMINO</option>
+                    </select>
+                </td>
+
+                <td colspan="2">
+                    <p>Dirección* </p>
+                    <input class="difdireccion" type="text" name="direccion" size="40" required>
+                </td>
+
+                <td>
+                    <p>Número*</p>
+                    <input type="text" name="numero" size="5" required>
+                </td>
+
+                <td>
+                    <p>Piso</p>
+                    <input type="text" name="piso" size="5">
+                </td>
+            </tr>
+            <tr>
+
+                <td>
+                    <p>Urb./Pol./Otros</p>
+                    <input type="text" name="urbpolotros" size="15">
+                </td>
+
+                <td>
+                    <p>Localidad*</p>
+                    <input type="text" name="localidad" size="20" required>
+                </td>
+
+                <td>
+                    <p>Provincia*</p>
+                    <select name="provincia" required>
+
+                        <option value="valencia">Valencia</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="salamanca">Salamanca</option>
+                    </select>
+                </td>
+
+                <td colspan="2">
+                    <p>Código Postal*</p>
+                    <input type="text" name="codpostal" size="17" required>
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>
+                    <p>Teléfono móvil:* <button type="button" onclick="mensaje('Información')">
+                            <img src="img/images.png" alt="imagen" width="15" height="15"
+                                style="vertical-align: middle">
+                        </button>
+                    </p>
+                    <input type="text" name="telefonomovil" size="20" required>
+                </td>
+
+                <td>
+                    <p>Teléfono particular:* <button type="button" onclick="mensaje('Información')">
+                            <img src="img/images.png" alt="imagen" width="15" height="15"
+                                style="vertical-align: middle">
+                        </button>
+                    </p>
+                    <input type="text" name="telefonopart" size="20" required>
+                </td>
+
+                <td colspan="2">
+                    <p>Dirección de e-mail:* <button type="button" onclick="mensaje('Información')">
+                            <img src="img/images.png" alt="imagen" width="15" height="15"
+                                style="vertical-align: middle">
+                        </button>
+                    </p>
+                    <input type="text" name="email" size="40" required>
+                </td>
+
+
+            </tr>
+
+
+
+        </table>
+
+        <hr>
+
+        <p>Para ofrecerle un mejor servicio nos sería útil conocer si posee en otra entidad:</p>
+
+        <input type="checkbox" name="plandepensiones">Plan de pensiones
+        <input type="checkbox" name="fondos">Fondos
+        <input type="checkbox" name="acciones">Acciones
+        <input type="checkbox" name="hipoteca">Hipoteca
+        <input type="checkbox" name="prestamo">Préstamo
+        <input type="checkbox" name="segurodevida">Seguro de vida
+
+        <hr>
+        
+            <p class="info">Puede consultar en nuestra Web o solicitamos toda la <a href="#">Información Precontractual</a>
+                de nuestros productos.Al pulsar "Continuar" está aceptando la <a href="#">Cláusula de Protección de
+                    datos</a>
+                <br>
+                (*) Los campos marcados con asterisco son obligatorios
+            </p>
+
+            <button class="info" type="submit" value="submit">
+                <img src="img/button.PNG" alt="imagen" width="100px">
+
+            </button>
+        
+    </form>
+
+    <script>
+        function mensaje(info) {
+            alert(info);
+        }
+    </script>
+</body>
+
+</html>
