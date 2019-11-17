@@ -11,300 +11,481 @@
 
 <body>
 
-    <h1>FORMULARIO 1</h1>
+    <main>
 
-    <form>
-        <fieldset>
-        <table cellpadding="15">
+        <h1>FORMULARIO 1</h1>
 
-            <tr>
+        <form>
+            <fieldset>
+                <table cellpadding="15">
 
-                <td>
-                    <p>Tratamiento: *</p>
-                    <input type="radio" name="tratamiento" value="sr" required> Sr.
-                    <input type="radio" name="tratamiento" value="sra" required> Sra.
-                </td>
+                    <tr>
 
-                <td>
-                    <p>Nombre: *</p>
-                    <input type="text" name="nombre" size="20" required>
-                </td>
+                        <td>
+                            <p>Tratamiento: *</p>
+                            <input type="radio" name="tratamiento" value="sr" required> Sr.
+                            <input type="radio" name="tratamiento" value="sra" required> Sra.
+                        </td>
 
-                <td>
-                    <p>Apellido1: *</p>
-                    <input type="text" name="apellido1" size="20" required>
-                </td>
+                        <td>
+                            <p>Nombre: *</p>
+                            <input type="text" name="nombre" size="20" required>
+                        </td>
 
-                <td>
-                    <p>Apellido2: </p>
-                    <input type="text" name="apellido2" size="20">
-                </td>
-            </tr>
+                        <td>
+                            <p>Apellido1: *</p>
+                            <input type="text" name="apellido1" size="20" required>
+                        </td>
 
-            <tr>
+                        <td>
+                            <p>Apellido2: </p>
+                            <input type="text" name="apellido2" size="20">
+                        </td>
+                    </tr>
 
-                <td>
-                    <p>Tipo Doc: *</p>
-                    <select name="tipodoc">
-                        <option value="1">D.N.I</option>
-                        <option value="2">NIA</option>
-                    </select>
-                </td>
+                    <tr>
 
-                <td>
-                    <p>NºDoc: *<button type="button" onclick="mensaje('Información')">
-                            <img src="img/images.png" alt="imagen" width="15" height="15"
-                                style="vertical-align: middle">
-                        </button></p>
-                    <input type="text" name="ndoc" size="20" required>
-                </td>
+                        <td>
+                            <p>Tipo Doc: *</p>
+                            <select name="tipodoc">
+                                <option value="1">D.N.I</option>
+                                <option value="2">NIA</option>
+                            </select>
+                        </td>
 
-                <td>
-                    <p>Fecha Nacimiento: *<button type="button" onclick="mensaje('Información')">
-                            <img src="img/images.png" alt="imagen" width="15" height="15"
-                                style="vertical-align: middle">
-                        </button></p>
-                    <input type="date" name="fechanacimiento" required>
-                </td>
-            </tr>
+                        <td>
+                            <p>NºDoc: *<button type="button" onclick="mensaje('Información')">
+                                    <img src="img/images.png" alt="imagen" width="15" height="15"
+                                        style="vertical-align: middle">
+                                </button></p>
+                            <input type="text" name="ndoc" size="20" required>
+                        </td>
 
-            <tr>
+                        <td>
+                            <p>Fecha Nacimiento: *<button type="button" onclick="mensaje('Información')">
+                                    <img src="img/images.png" alt="imagen" width="15" height="15"
+                                        style="vertical-align: middle">
+                                </button></p>
+                            <input type="date" name="fechanacimiento" required>
+                        </td>
+                    </tr>
 
-                <td>
-                    <p>País de Nacimiento: *</p>
-                    <select name="paisdenacimiento" required>
-                        <option value="espana">ESPAÑA</option>
-                        <option value="chile">CHILE</option>
-                        <option value="alemania">ALEMANIA</option>
-                    </select>
-                </td>
+                    <tr>
 
-                <td>
-                    <p>Nacionalidad: *</p>
-                    <select name="nacionalidad" required>
-                        <option value="espana">ESPAÑA</option>
-                        <option value="chile">CHILE</option>
-                        <option value="alemania">ALEMANIA</option>
-                    </select>
-                </td>
+                        <td>
+                            <p>País de Nacimiento: *</p>
+                            <select name="paisdenacimiento" required>
+                                <option value="espana">ESPAÑA</option>
+                                <option value="chile">CHILE</option>
+                                <option value="alemania">ALEMANIA</option>
+                            </select>
+                        </td>
 
-                <td>
-                    <p>Segunda Nacionalidad:</p>
-                    <select name="segundanacionalidad">
-                        <option value="ninguna">Ninguna</option>
-                        <option value="espanola">ESPAÑOLA</option>
-                        <option value="alemania">ALEMANA</option>
-                    </select>
-                </td>
+                        <td>
+                            <p>Nacionalidad: *</p>
+                            <select name="nacionalidad" required>
+                                <option value="espana">ESPAÑA</option>
+                                <option value="chile">CHILE</option>
+                                <option value="alemania">ALEMANIA</option>
+                            </select>
+                        </td>
 
-                <td>
-                    <p>País residencia fiscal: *:</p>
-                    <select name="paisresidenciafiscal" required>
-                        <option value="espana">ESPAÑA</option>
-                        <option value="bahamas">BAHAMAS</option>
-                        <option value="suiza">SUIZA</option>
-                    </select>
-                </td>
-            </tr>
+                        <td>
+                            <p>Segunda Nacionalidad:</p>
+                            <select name="segundanacionalidad">
+                                <option value="ninguna">Ninguna</option>
+                                <option value="espanola">ESPAÑOLA</option>
+                                <option value="alemania">ALEMANA</option>
+                            </select>
+                        </td>
 
-            <tr>
-                <td>
-                    <p>Trabajo*</p>
-                    <select name="trabajo" required>
-                        <option selected disabled>Selecciona una opción</option>
-                        <option value="informatico">Informático</option>
-                        <option value="abogado">Abogado</option>
-                        <option value="profesor">Profesor</option>
-                    </select>
-                </td>
+                        <td>
+                            <p>País residencia fiscal: *:</p>
+                            <select name="paisresidenciafiscal" required>
+                                <option value="espana">ESPAÑA</option>
+                                <option value="bahamas">BAHAMAS</option>
+                                <option value="suiza">SUIZA</option>
+                            </select>
+                        </td>
+                    </tr>
 
-                <td>
-                    <p>Tipo de Actividad*</p>
-                    <select name="tipodeactividad" required>
-                        <option selected disabled>Selecciona una opción</option>
-                        <option value="tareashogar">Tareas hogar</option>
-                        <option value="estudiante">Estudiante</option>
-                        <option value="desempleado">Desempleado</option>
-                        <option value="jubilado">Jubilado</option>
-                        <option value="pensionista">Pensionista</option>
-                    </select>
-                </td>
+                    <tr>
+                        <td>
+                            <p>Trabajo*</p>
+                            <select name="trabajo" required>
+                                <option selected disabled>Selecciona una opción</option>
+                                <option value="informatico">Informático</option>
+                                <option value="abogado">Abogado</option>
+                                <option value="profesor">Profesor</option>
+                            </select>
+                        </td>
 
-                <td>
-                    <p>Sector Profesional*</p>
-                    <select name="sectorprofesional" required>
-                        <option selected disabled>Selecciona una opción</option>
-                        <option value="notrabaja">No trabaja</option>
-                        <option value="banca">Banca</option>
-                        <option value="construccion">Construcción</option>
-                        <option value="energia">Energía</option>
-                        <option value="industria">Industria</option>
-                        <option value="recursoshumanos">Recursos Humanos</option>
-                        <option value="servicios">Servicios</option>
-                    </select>
-                </td>
-                <td>
-                    <p>Empresa *
-                        <button type="button" onclick="mensaje('Información')">
-                            <img src="img/images.png" alt="imagen" width="15" height="15"
-                                style="vertical-align: middle">
+                        <td>
+                            <p>Tipo de Actividad*</p>
+                            <select name="tipodeactividad" required>
+                                <option selected disabled>Selecciona una opción</option>
+                                <option value="tareashogar">Tareas hogar</option>
+                                <option value="estudiante">Estudiante</option>
+                                <option value="desempleado">Desempleado</option>
+                                <option value="jubilado">Jubilado</option>
+                                <option value="pensionista">Pensionista</option>
+                            </select>
+                        </td>
+
+                        <td>
+                            <p>Sector Profesional*</p>
+                            <select name="sectorprofesional" required>
+                                <option selected disabled>Selecciona una opción</option>
+                                <option value="notrabaja">No trabaja</option>
+                                <option value="banca">Banca</option>
+                                <option value="construccion">Construcción</option>
+                                <option value="energia">Energía</option>
+                                <option value="industria">Industria</option>
+                                <option value="recursoshumanos">Recursos Humanos</option>
+                                <option value="servicios">Servicios</option>
+                            </select>
+                        </td>
+                        <td>
+                            <p>Empresa *
+                                <button type="button" onclick="mensaje('Información')">
+                                    <img src="img/images.png" alt="imagen" width="15" height="15"
+                                        style="vertical-align: middle">
+                                </button>
+                            </p>
+
+                            <select name="tipodeactividad" required>
+                                <option selected disabled>Selecciona una opción</option>
+                                <option value="porcuentaajena">Por cuenta ajena</option>
+                                <option value="porcuentapropia">Por cuenta propia</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <p>Propósito de la cuenta: *</p>
+                            <select name="propositodelacuenta" required>
+                                <option value="ahorro" selected>Ahorro</option>
+                                <option value="nomina">Nómina</option>
+                                <option value="gastos">Gastos</option>
+                            </select>
+                        </td>
+
+                        <td>
+                            <p>Origen de sus ahorros: *</p>
+                            <select name="Origendesusahorros" required>
+                                <option selected disabled>Nómina o pensión </option>
+                                <option value="nomina">Nómina</option>
+                                <option value="pension">Pensión</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="greytable" cellpadding="15">
+
+                    <tr>
+
+                        <td>
+                            <p>Tipo de vía*</p>
+                            <select name="tipodevia" required>
+                                <option value="calle" selected>CALLE</option>
+                                <option value="via">VÍA</option>
+                                <option value="camino">CAMINO</option>
+                            </select>
+                        </td>
+
+                        <td colspan="2">
+                            <p>Dirección* </p>
+                            <input class="difdireccion" type="text" name="direccion" size="40" required>
+                        </td>
+
+                        <td>
+                            <p>Número*</p>
+                            <input type="text" name="numero" size="5" required>
+                        </td>
+
+                        <td>
+                            <p>Piso</p>
+                            <input type="text" name="piso" size="5">
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>
+                            <p>Urb./Pol./Otros</p>
+                            <input type="text" name="urbpolotros" size="15">
+                        </td>
+
+                        <td>
+                            <p>Localidad*</p>
+                            <input type="text" name="localidad" size="20" required>
+                        </td>
+
+                        <td>
+                            <p>Provincia*</p>
+                            <select name="provincia" required>
+
+                                <option value="valencia">Valencia</option>
+                                <option value="madrid">Madrid</option>
+                                <option value="salamanca">Salamanca</option>
+                            </select>
+                        </td>
+
+                        <td colspan="2">
+                            <p>Código Postal*</p>
+                            <input type="text" name="codpostal" size="17" required>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <p>Teléfono móvil:* <button type="button" onclick="mensaje('Información')">
+                                    <img src="img/images.png" alt="imagen" width="15" height="15"
+                                        style="vertical-align: middle">
+                                </button>
+                            </p>
+                            <input type="text" name="telefonomovil" size="20" required>
+                        </td>
+
+                        <td>
+                            <p>Teléfono particular: <button type="button" onclick="mensaje('Información')">
+                                    <img src="img/images.png" alt="imagen" width="15" height="15"
+                                        style="vertical-align: middle">
+                                </button>
+                            </p>
+                            <input type="text" name="telefonopart" size="20" required>
+                        </td>
+
+                        <td colspan="2">
+                            <p>Dirección de e-mail:* <button type="button" onclick="mensaje('Información')">
+                                    <img src="img/images.png" alt="imagen" width="15" height="15"
+                                        style="vertical-align: middle">
+                                </button>
+                            </p>
+                            <input type="text" name="email" size="25" required>
+                        </td>
+                    </tr>
+
+                </table>
+
+
+                <hr>
+
+                <p>Para ofrecerle un mejor servicio nos sería útil conocer si posee en otra entidad:</p>
+
+                <input type="checkbox" name="plandepensiones">Plan de pensiones
+                <input type="checkbox" name="fondos">Fondos
+                <input type="checkbox" name="acciones">Acciones
+                <input type="checkbox" name="hipoteca">Hipoteca
+                <input type="checkbox" name="prestamo">Préstamo
+                <input type="checkbox" name="segurodevida">Seguro de vida
+
+                <hr>
+
+                <p class="info">Puede consultar en nuestra Web o solicitamos toda la <a href="#">Información
+                        Precontractual</a>
+                    de nuestros productos.Al pulsar "Continuar" está aceptando la <a href="#">Cláusula de Protección de
+                        datos</a>
+                    <br>
+                    <br>
+                    (*) Los campos marcados con asterisco son obligatorios
+                </p>
+
+                <button class="floatright" type="submit" value="submit">
+                    <img src="img/button.PNG" alt="imagen" width="100px">
+
+                </button>
+
+            </fieldset>
+
+        </form>
+
+        <h1> FORMULARIO 2</h1>
+
+        <form>
+
+            <table cellspacing="20">
+
+
+                <tr>
+
+                    <td width="25%">
+                        <img src="img/logo.png" alt="imagen" width="100px"></td>
+
+                    <td width="50%" class="tcenter">
+                        <h1 class="difh1">Abrir cuenta NOMINA</h1>
+                    </td>
+
+                    <td style="text-align: right;" width="25%">
+                        <button onclick="mensaje('Cancelar')"><img src="img/x.png" type="submit" value="submit"
+                                width="100px"></button></td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="tcenter" colspan="3" width="100%"><img src="img/logos.PNG"></td>
+
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <p>E-mail<span class="required">*</span></p>
+                        <input class="inputx2" type="text" name="email" size="40" required>
+
+                    </td>
+
+                    <td>
+
+                        <p>DNI o Tarjeta de residencia <span class="required">*</span></p>
+                        <input class="inputx2" type="text" name="email" size="40" required>
+
+                    </td>
+
+                    <td>
+
+                        <p>Fecha de nacimiento <span class="required">*</span></p>
+                        <input class="inputx2 inputfloat" type="text" name="fechanacimiento" size="5" maxlength="2"
+                            required>
+                        <input class="inputx2 inputfloat" type="text" name="fechanacimiento" size="5" maxlength="2"
+                            required>
+                        <input class="inputx2 inputfloat" type="text" name="fechanacimiento" size="10" maxlength="4"
+                            required>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p><span class="required inputfloat ">*</span> Campo obligatorio</p>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td colspan="3">
+                        <p>Consulte la <a href="#">Información Precontractual</a> de la Cuenta NÓMINA que también
+                            encontrará en el apartado "Información legal".</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">
+                        <div class="cajascroll">
+                            <p class="naranja">Información básica sobre protección de datos de ING BANK NV, Sucursal en
+                                España.</p>
+
+                            <p><span class="naranja">¿Quién es el Responsable del tratamiento de sus datos
+                                    personales?</span> ING BANK NV, Sucursal en España (ING) con domicilio en C/ Severo
+                                Ochoa 2, 28232 Las Rozas (Madrid). Disponemos de un Delegado de Protección de Datos cuya
+                                dirección es <a href="mailto:dpo@ing.es">dpo@ing.es.</a></p>
+
+                            <p><span class="naranja">¿Cómo obtenemos sus datos personales?</span> Los habrá facilitado
+                                usted o habremos accedido a ellos a raíz de sus consultas, solicitudes o contrataciones
+                                de productos, operaciones o transacciones que haya realizado con nosotros, su navegación
+                                por sitios Web, propios o de terceros, o que hayamos obtenido del uso de dispositivos
+                                móviles de telecomunicaciones, TPV´s, cajeros automáticos u otros canales legítimos.
+                                También pueden haber sido cedidos legítimamente por terceros si usted nos ha autorizado
+                                en el ámbito de la contratación de un producto o prestación de un servicio. Le
+                                informamos de que ING BANK utilizará sus números de teléfono móvil y su correo
+                                electrónico para informarle, puntualmente, sobre cualquier aspecto relacionado con sus
+                                cuentas así como de que la información relativa a sus productos le será remitida por
+                                Internet a través de correspondencia web, pudiendo, no obstante, revocar esta opción en
+                                cualquier momento. En caso de que facilite los datos de un segundo interviniente en la
+                                contratación de un producto trataremos los mismos de la forma indicada en esta
+                                información. En caso de que no formalice su alta como interviniente en el producto en un
+                                plazo máximo de 3 meses, sus datos serán eliminados.</p>
+
+                            <p><span class="naranja">¿Para qué tratamos sus datos personales?</span> Tratamos sus datos
+                                con el fin de gestionar y prestar el servicio que haya solicitado o contratado, y
+                                asegurarnos de que le ofrecemos los mejores productos y servicios financieros, según sus
+                                necesidades, llevando a cabo análisis y /o estudios que nos permiten mejorar la calidad
+                                de nuestros servicios y comunicarle nuestras ofertas. En relación con nuestros productos
+                                de crédito, tratamos sus datos de solvencia económica para cumplir con la obligación
+                                legal de analizar su capacidad de pago, y también porque queremos ofrecerle productos
+                                adecuados a su perfil. En otros casos será necesario tratar sus datos para cumplir con
+                                obligaciones exigidas por la legislación aplicable. Si necesitamos obtener su
+                                consentimiento para efectuar algún tratamiento de datos, le informaremos de ello en el
+                                momento en que sea necesario obtenerlo, pudiendo denegarlo entonces, o revocarlo en
+                                cualquier momento de acuerdo con la legislación aplicable en esta materia.</p>
+
+                            <p><span class="naranja">¿En qué nos basamos para tratar sus datos?</p></span>
+
+                            <ul>
+                                <li>En el cumplimiento de las obligaciones contractuales que hayamos asumido con usted
+                                    en la prestación de servicios o gestión de sus productos.</li>
+                                <li>En el cumplimiento de obligaciones legales en materia de evaluación de solvencia de
+                                    los solicitantes de productos con riesgo de crédito, fiscales, contables, prevención
+                                    de fraude y blanqueo de capitales, seguridad social u otras impuestas por organismos
+                                    de supervisión o autoridades de control.</li>
+                                <li>En la satisfacción de nuestro interés legítimo para llevar a cabo encuestas, modelos
+                                    estadísticos de valoración y/o de riesgo, o estudios de mercado que pueden ser de su
+                                    interés, y mejorar, si procede, los productos que ya haya contratado así como para
+                                    el propio conocimiento "know-how" que permite a ING ofrecer a sus clientes servicios
+                                    de valor añadido.</li>
+                                <li>En su consentimiento expreso en los casos en que sea preciso.</li>
+
+                            </ul>
+                            <p><span class="naranja">¿Quiénes son los destinatarios de sus datos?</span> ING puede
+                                comunicar sus datos a entidades del grupo ING, a organismos públicos en cumplimiento de
+                                obligaciones legales, a ficheros de solvencia económica y de cumplimiento o
+                                incumplimiento de obligaciones dinerarias de acceso público o de otra tipología a la que
+                                nos encontremos adheridos cuando sea necesario para la prestación del servicio o
+                                contratación que haya solicitado, y a otras entidades ajenas a ING que tratarán sus
+                                datos por cuenta de ING como parte de la prestación de servicios que les hemos
+                                contratado.</p>
+
+                            <p><span class="naranja">¿Cuáles son sus derechos?</span> Usted tiene derecho de acceso a
+                                sus datos, rectificación, supresión y portabilidad, así como el derecho a la limitación
+                                u oposición al tratamiento de sus datos, y a retirar el consentimiento prestado, en
+                                cualquier momento, como se explica en la información contenida aquí. También tiene
+                                derecho a presentar una reclamación ante la Autoridad de Control competente si entiende
+                                que el tratamiento de datos de ING no se ajusta a la legislación vigente.</p>
+
+                            <p><span class="naranja">Puede consultar más información y detalle sobre Protección de Datos
+                                    en ING</span> <a href="#">aquí.</a></p>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="textderecha" colspan="3">
+                        <p>Al pulsar "Continuar" declara haber leído y acepta la Información sobre Protección de Datos.
+                        </p>
+                        <hr>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td colspan="3">
+                        <button class="floatright" type="submit" value="submit">
+                            <img src="img/button.PNG" alt="imagen" width="100px">
+
                         </button>
-                    </p>
+                        
+                    </td>
 
-                    <select name="tipodeactividad" required>
-                        <option selected disabled>Selecciona una opción</option>
-                        <option value="porcuentaajena">Por cuenta ajena</option>
-                        <option value="porcuentapropia">Por cuenta propia</option>
-                    </select>
-                </td>
-            </tr>
+                </tr>
 
-            <tr>
+            </table>
 
-                <td>
-                    <p>Propósito de la cuenta: *</p>
-                    <select name="propositodelacuenta" required>
-                        <option value="ahorro" selected>Ahorro</option>
-                        <option value="nomina">Nómina</option>
-                        <option value="gastos">Gastos</option>
-                    </select>
-                </td>
+        </form>
 
-                <td>
-                    <p>Origen de sus ahorros: *</p>
-                    <select name="Origendesusahorros" required>
-                        <option selected disabled>Nómina o pensión </option>
-                        <option value="nomina">Nómina</option>
-                        <option value="pension">Pensión</option>
-                    </select>
-                </td>
-            </tr>
-        </table>
-
-        <table class="greytable" cellpadding="15">
-
-            <tr>
-
-                <td>
-                    <p>Tipo de vía*</p>
-                    <select name="tipodevia" required>
-                        <option value="calle" selected>CALLE</option>
-                        <option value="via">VÍA</option>
-                        <option value="camino">CAMINO</option>
-                    </select>
-                </td>
-
-                <td colspan="2">
-                    <p>Dirección* </p>
-                    <input class="difdireccion" type="text" name="direccion" size="40" required>
-                </td>
-
-                <td>
-                    <p>Número*</p>
-                    <input type="text" name="numero" size="5" required>
-                </td>
-
-                <td>
-                    <p>Piso</p>
-                    <input type="text" name="piso" size="5">
-                </td>
-            </tr>
-            <tr>
-
-                <td>
-                    <p>Urb./Pol./Otros</p>
-                    <input type="text" name="urbpolotros" size="15">
-                </td>
-
-                <td>
-                    <p>Localidad*</p>
-                    <input type="text" name="localidad" size="20" required>
-                </td>
-
-                <td>
-                    <p>Provincia*</p>
-                    <select name="provincia" required>
-
-                        <option value="valencia">Valencia</option>
-                        <option value="madrid">Madrid</option>
-                        <option value="salamanca">Salamanca</option>
-                    </select>
-                </td>
-
-                <td colspan="2">
-                    <p>Código Postal*</p>
-                    <input type="text" name="codpostal" size="17" required>
-                </td>
-
-            </tr>
-
-            <tr>
-
-                <td>
-                    <p>Teléfono móvil:* <button type="button" onclick="mensaje('Información')">
-                            <img src="img/images.png" alt="imagen" width="15" height="15"
-                                style="vertical-align: middle">
-                        </button>
-                    </p>
-                    <input type="text" name="telefonomovil" size="20" required>
-                </td>
-
-                <td>
-                    <p>Teléfono particular: <button type="button" onclick="mensaje('Información')">
-                            <img src="img/images.png" alt="imagen" width="15" height="15"
-                                style="vertical-align: middle">
-                        </button>
-                    </p>
-                    <input type="text" name="telefonopart" size="20" required>
-                </td>
-
-                <td colspan="2">    
-                    <p>Dirección de e-mail:* <button type="button" onclick="mensaje('Información')">
-                            <img src="img/images.png" alt="imagen" width="15" height="15"
-                                style="vertical-align: middle">
-                        </button>
-                    </p>
-                    <input type="text" name="email" size="25" required>
-                </td>
-            </tr>
-
-        </table>
-
-
-        <hr>
-
-        <p>Para ofrecerle un mejor servicio nos sería útil conocer si posee en otra entidad:</p>
-
-        <input type="checkbox" name="plandepensiones">Plan de pensiones
-        <input type="checkbox" name="fondos">Fondos
-        <input type="checkbox" name="acciones">Acciones
-        <input type="checkbox" name="hipoteca">Hipoteca
-        <input type="checkbox" name="prestamo">Préstamo
-        <input type="checkbox" name="segurodevida">Seguro de vida
-
-        <hr>
-
-        <p class="info">Puede consultar en nuestra Web o solicitamos toda la <a href="#">Información Precontractual</a>
-            de nuestros productos.Al pulsar "Continuar" está aceptando la <a href="#">Cláusula de Protección de
-                datos</a>
-            <br>
-            <br>
-            (*) Los campos marcados con asterisco son obligatorios
-        </p>
-
-        <button class="info" type="submit" value="submit">
-            <img src="img/button.PNG" alt="imagen" width="100px">
-
-        </button>
-
-    </fieldset>
-    </form>
-
+    </main>
     <script>
         function mensaje(info) {
             alert(info);
         }
     </script>
+
+
+
 </body>
 
 </html>

@@ -1,5 +1,18 @@
+table {
 
 
+    width: 60%; 
+    margin: 0 auto;
+
+
+}
+h1{
+
+    font-family:  Arial, Helvetica, Verdana;
+    color:black;
+    text-align: center;
+
+    }
 
 input[type=radio]:checked + label {
 
@@ -30,5 +43,68 @@ border: none;
 fieldset {
 
 width: 50%;
+margin: 0 auto;
+
+}
+
+.tcenter {
+
+text-align: center;
+
+}
+
+.difh1 {
+
+    font-family:  Arial, Helvetica, Verdana;
+    color:  #E8661C;
+
+}
+
+.inputx2 {
+
+height: 35px;
+
+
+}
+
+.required {
+
+color: red;
+
+}
+
+.inputfloat {
+
+float: left;
+
+
+}
+
+.cajascroll {
+
+height: 100px;
+overflow: scroll;
+padding: 20px;
+border: 1px solid #ccc;
+
+}
+
+.naranja {
+
+color: #E8661C;
+
+}
+
+
+.textderecha {
+
+text-align: right;
+
+}
+
+.floatright {
+
+
+    float: right;
 
 }
